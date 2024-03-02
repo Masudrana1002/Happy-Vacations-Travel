@@ -219,9 +219,8 @@ li {
 .img-gallery {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     gap: 20px;
-    
+
 }
 
 .img-gallery img {
@@ -231,12 +230,14 @@ li {
 
 .img-1 {
     grid-column: 1 / span 6;
-    
+
 
 }
-.img-gallery div{
+
+.img-gallery div {
     position: relative;
 }
+
 .img-gallery p {
     position: absolute;
     top: 45%;
@@ -277,6 +278,68 @@ li {
 
 
 }
+
+/* Choose Your Destination section end  */
+/* Why Choose Us section style  start */
+.Choose-us-content h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 100px auto 0;
+}
+
+.Choose-us-content p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 643px;
+    margin: 24px auto 48px;
+
+}
+.cards{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.card {
+    width: 573px;
+    height: 284px;
+    padding: 32px;
+    border-radius: 16px;
+}
+
+.card h3 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    width: 486px;
+}
+
+.card-1 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-3 {
+border: 1px solid rgba(233, 68, 68, 0.20);
+background: rgba(233, 68, 68, 0.05);
+}
+
+
 
 /* responsive */
 @media only screen and (max-width: 600px) {
@@ -341,5 +404,36 @@ li {
     .popular-tours-img {
         width: 100%;
     }
-/* Our Popular Tours section end */
+
+    /* Our Popular Tours section end */
+    /*  Choose Your Destination section start */
+    .choose-your-destination {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .img-gallery div {
+        grid-column: 1;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .img-gallery-content h2 {
+        font-size: 20px;
+    }
+
+    .img-gallery-content p {
+        font-size: 14px;
+    }
+
+
+    .Choose-us-content p {
+        width: 450px;
+    }
 }
